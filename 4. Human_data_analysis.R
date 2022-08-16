@@ -1,8 +1,5 @@
 ###Human data###
 
-
-c3c9c11a3a12a13
-
 ###control_1
 
 C3 <- readMM(file = matrix.path)
