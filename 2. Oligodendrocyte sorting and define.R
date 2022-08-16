@@ -93,5 +93,3 @@ app_olig_integrated <- RunUMAP(app_olig_integrated, dims = 1:6)
 app_olig_integrated <- FindNeighbors(app_olig_integrated, reduction = "pca", dims = 1:6)
 app_olig_integrated <- FindClusters(app_olig_integrated, resolution = 0.45)
 DimPlot(app_olig_integrated, reduction = "umap", label = TRUE, label.size = 6)
-#remove monocytes expressing C1qb;#
-app_olig_integrated <- subset(app_olig_integrated, idents = c("9","7"), invert = TRUE)
